@@ -9,7 +9,7 @@
   
   inputs.src-fae-v1_0_0.flake = false;
   inputs.src-fae-v1_0_0.owner = "h3rald";
-  inputs.src-fae-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-fae-v1_0_0.ref   = "v1_0_0";
   inputs.src-fae-v1_0_0.repo  = "fae";
   inputs.src-fae-v1_0_0.type  = "github";
   
