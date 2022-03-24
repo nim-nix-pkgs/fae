@@ -13,6 +13,14 @@
   inputs.src-fae-v1_0_0.repo  = "fae";
   inputs.src-fae-v1_0_0.type  = "github";
   
+  inputs."nifty".owner = "nim-nix-pkgs";
+  inputs."nifty".ref   = "master";
+  inputs."nifty".repo  = "nifty";
+  inputs."nifty".dir   = "v1_2_2";
+  inputs."nifty".type  = "github";
+  inputs."nifty".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nifty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
